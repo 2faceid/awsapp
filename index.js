@@ -1,4 +1,4 @@
-import express from "express";
+simport express from "express";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -245,7 +245,7 @@ const port = process.env.PORT;
 
 app.use("/api/users", (req,res) => {
     return res.status(200).json({
-        data: users
+        usersdata: users
     })
 })
 
